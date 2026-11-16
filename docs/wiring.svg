@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1320" viewBox="0 0 1500 1320">
+<style>text{font-family:Arial,sans-serif;fill:#20334a}.title{font-size:30px;font-weight:bold}.head{font-size:22px;font-weight:bold}.label{font-size:17px}.small{font-size:14px}.wire{stroke:#087f8c;stroke-width:2.5;fill:none}.panel{fill:#fff;stroke:#9fb3c4;stroke-width:1.4}</style>
+<rect width="1500" height="1320" fill="#f3f7fa"/>
+<text x="40" y="48" class="title">LoRa Telemetry &amp; Image Link | Wiring</text>
+<text x="40" y="77" class="label">Arduino IDE · Ra-02 SPI radios · Python browser dashboard · Code-matched wiring</text>
+<rect x="35" y="105" width="1430" height="110" rx="10" class="panel"/>
+<text x="51" y="136" class="head">COMMAND / RESPONSE PATH</text>
+<text x="60" y="180" class="label">Python dashboard</text>
+<path d="M235 175 L320 175" class="wire"/>
+<text x="258" y="161" class="small">USB</text>
+<text x="340" y="180" class="label">ESP8266</text>
+<path d="M445 175 L540 175" class="wire"/>
+<text x="470" y="161" class="small">SPI</text>
+<text x="560" y="180" class="label">Ra-02</text>
+<path d="M630 175 L825 175" class="wire"/>
+<text x="675" y="161" class="small">LoRa ↔ LoRa</text>
+<text x="845" y="180" class="label">Ra-02</text>
+<path d="M915 175 L1010 175" class="wire"/>
+<text x="940" y="161" class="small">SPI</text>
+<text x="1030" y="180" class="label">ESP32-CAM + DHT11</text>
+<rect x="35" y="240" width="700" height="430" rx="10" class="panel"/>
+<text x="51" y="271" class="head">GROUND · LAPTOP-POWERED NODEMCU</text>
+<rect x="65" y="305" width="250" height="270" rx="10" class="panel"/>
+<text x="81" y="336" class="head">ESP8266</text>
+<rect x="440" y="305" width="260" height="270" rx="10" class="panel"/>
+<text x="456" y="336" class="head">Ra-02</text>
+<text x="80" y="370" class="label">D5 / GPIO14</text>
+<path d="M245 365 L460 365" class="wire"/>
+<text x="480" y="370" class="label">SCK</text>
+<text x="80" y="410" class="label">D6 / GPIO12</text>
+<path d="M245 405 L460 405" class="wire"/>
+<text x="480" y="410" class="label">MISO</text>
+<text x="80" y="450" class="label">D7 / GPIO13</text>
+<path d="M245 445 L460 445" class="wire"/>
+<text x="480" y="450" class="label">MOSI</text>
+<text x="80" y="490" class="label">D1 / GPIO5</text>
+<path d="M245 485 L460 485" class="wire"/>
+<text x="480" y="490" class="label">NSS</text>
+<text x="80" y="530" class="label">D2 / GPIO4</text>
+<path d="M245 525 L460 525" class="wire"/>
+<text x="480" y="530" class="label">RESET</text>
+<text x="65" y="612" class="label">Micro-USB → laptop: both power and serial data.</text>
+<text x="65" y="640" class="small">Radio 3.3V → regulated 3V3; GND → local GND. DIO pins unused.</text>
+<rect x="765" y="240" width="700" height="430" rx="10" class="panel"/>
+<text x="781" y="271" class="head">REMOTE · ADAPTER-POWERED ESP32-CAM</text>
+<rect x="795" y="305" width="250" height="270" rx="10" class="panel"/>
+<text x="811" y="336" class="head">ESP32-CAM</text>
+<rect x="1170" y="305" width="260" height="270" rx="10" class="panel"/>
+<text x="1186" y="336" class="head">Ra-02</text>
+<text x="810" y="370" class="label">GPIO14</text>
+<path d="M975 365 L1190 365" class="wire"/>
+<text x="1210" y="370" class="label">SCK</text>
+<text x="810" y="410" class="label">GPIO12</text>
+<path d="M975 405 L1190 405" class="wire"/>
+<text x="1210" y="410" class="label">MISO</text>
+<text x="810" y="450" class="label">GPIO13</text>
+<path d="M975 445 L1190 445" class="wire"/>
+<text x="1210" y="450" class="label">MOSI</text>
+<text x="810" y="490" class="label">GPIO15</text>
+<path d="M975 485 L1190 485" class="wire"/>
+<text x="1210" y="490" class="label">NSS</text>
+<text x="810" y="545" class="small">GPIO3 / U0R → DHT11 DATA</text>
+<text x="795" y="612" class="label">External regulated 5 V → camera 5V input.</text>
+<text x="795" y="640" class="small">Radio 3.3V → regulated 3V3; GND → remote local GND.</text>
+<rect x="35" y="695" width="700" height="355" rx="10" class="panel"/>
+<text x="51" y="726" class="head">REMOTE BOOT / RESET RESISTORS</text>
+<text x="65" y="754" class="label">3.3 V</text>
+<text x="285" y="754" class="label">3.3 V</text>
+<text x="510" y="754" class="label">GPIO12 / MISO</text>
+<path d="M100 765 L100 790" class="wire"/>
+<rect x="90" y="790" width="20" height="65" fill="white" stroke="#087f8c" stroke-width="2.5"/>
+<path d="M100 855 L100 888" class="wire"/>
+<path d="M320 765 L320 790" class="wire"/>
+<rect x="310" y="790" width="20" height="65" fill="white" stroke="#087f8c" stroke-width="2.5"/>
+<path d="M320 855 L320 888" class="wire"/>
+<text x="130" y="828" class="small">10 kΩ</text>
+<text x="350" y="828" class="small">10 kΩ</text>
+<text x="65" y="916" class="small">GPIO15 / NSS</text>
+<text x="285" y="916" class="small">Ra-02 RESET</text>
+<path d="M550 765 L550 790" class="wire"/>
+<rect x="540" y="790" width="20" height="65" fill="white" stroke="#087f8c" stroke-width="2.5"/>
+<text x="580" y="828" class="small">10 kΩ</text>
+<path d="M550 855 L550 888" class="wire"/>
+<path d="M530 888 L570 888" class="wire"/>
+<path d="M537 896 L563 896" class="wire"/>
+<path d="M544 904 L556 904" class="wire"/>
+<text x="65" y="965" class="small">Radio stays deselected at boot; GPIO12 must not be driven HIGH.</text>
+<text x="65" y="994" class="small">RESET is held HIGH; no MCU-controlled radio reset on remote.</text>
+<text x="65" y="1023" class="small">Use these passives with the supplied pin mapping.</text>
+<rect x="765" y="695" width="700" height="355" rx="10" class="panel"/>
+<text x="781" y="726" class="head">SENSOR &amp; RADIO POWER</text>
+<text x="795" y="756" class="label">DHT11 VCC → 3.3 V; GND → remote GND.</text>
+<text x="795" y="792" class="label">DATA → GPIO3 with 4.7–10 kΩ pull-up if absent.</text>
+<text x="795" y="828" class="label">Disconnect DHT DATA during ESP32-CAM upload.</text>
+<text x="795" y="878" class="label">Ra-02 uses 3.3 V power and 3.3 V logic only.</text>
+<text x="795" y="914" class="label">Fit local decoupling and use adequate regulator headroom.</text>
+<text x="795" y="950" class="label">Attach a matched antenna to each radio before TX.</text>
+<text x="795" y="1000" class="small">No microSD card; DIO0 is not required in polling mode.</text>
+<rect x="35" y="1075" width="1430" height="180" rx="10" class="panel"/>
+<text x="51" y="1106" class="head">POWER AND CONNECTION NOTES</text>
+<text x="60" y="1137" class="label">No separate USB-to-TTL adapter is used between the ground NodeMCU and laptop.</text>
+<text x="60" y="1173" class="label">Grounds connect within each assembly; no ground wire is needed across the wireless link.</text>
+<text x="60" y="1209" class="label">Do not connect 5 V to Ra-02. Do not parallel independent supply outputs. Use only regulated adapter DC outputs.</text>
+<text x="40" y="1294" class="small">See docs/WIRING.md for all connections. See the pin tables for firmware connections.</text>
+</svg>
